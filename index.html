@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Shoot 🔫</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="penal">
+            <!-- Game UI -->
+            <div id="maintop">
+                <!-- Username Display -->
+                <div class="user-display">
+                    <span id="usernameDisplay" class="username">😎</span>
+                </div>
+
+                <!-- Game Elements -->
+                <div class="elem">
+                    <h2> Hit</h2>
+                    <div id="presshit" class="box">5</div>
+                </div>
+                <div class="elem">
+                    <h2> Timer</h2>
+                    <div id="times" class="box">60</div>
+                </div>
+                <div class="elem">
+                    <h2> Score</h2>
+                    <div id="scorevar" class="box">0</div>
+                </div>
+
+                
+                <!-- Start Button -->
+                <div class="user-input">
+                  <button id="startbutton" onclick="startGame()">Start</button>
+                </div>
+                
+                <!-- Reset Button -->
+                <div class="reset-button">
+                    <button id="resetbutton" onclick="resetGame()">Reset</button>
+                </div>
+            </div>
+
+            <!-- Bubble Container -->
+            <div id="mainbubble">
+                <!-- Bubbles will be added dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Username Input Popup -->
+    <div class="user-input-popup" id="userInputPopup">
+        <div class="popup-content">
+            <h2>Enter your username</h2>
+            <input type="text" id="usernameInput" placeholder="Your username">
+            <button class="submit-button" onclick="submitUsername()">Submit</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
